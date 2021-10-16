@@ -1,3 +1,6 @@
+import time
+
+
 class WarCardGame:
 
     PLAYER = 0
@@ -41,6 +44,7 @@ class WarCardGame:
             self.add_cards_to_character(self._computer, cards_won)
         else:
             print("\nIt's a tie!!\nNow war begins ...")
+            time.sleep(5)
             self.start_war(cards_won)
 
         return winner
